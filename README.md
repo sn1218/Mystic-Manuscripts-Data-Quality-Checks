@@ -1,10 +1,13 @@
 # Mystic Manuscripts Data Cleaning
-## The Scenario
+## Overview
 
-You've been assigned to a crucial project for one of our esteemed clients, "Mystic Manuscripts". They have entrusted you with a significant dataset, crucial for their upcoming analysis. Your mission is to ensure the integrity and quality of this data before it's used for any further analysis.
+In this project, the provided dataset from Mystic Manuscripts was first structured and uploaded into a SQL database. A table was created with columns matching the format of the original Excel file. Once the data was loaded, thorough quality checks were conducted to ensure the integrity of the dataset.
+
+These checks included verifying row and column counts, detecting null values, and assessing special characters and outliers. Issues were identified and documented in a Quality Control Form. The dataset was cleaned, ensuring it was accurate and reliable for further analysis by the client.
 
 ## The Project
+### Key Files in the Repository
 
-First I created a table with columns and column names in the same format as the Excel file provided (see dynamo_table_create.sql). Then I uploaded the data into the SQL database.
-
-Quality checks were performed including row counts, column counts, count of nulls, min, max, and sum per column, special character check, etc. (see dynamo_qc_check.sql). The details can be found in the Quality Control Form.
+* dynamo_table_create.sql: SQL script for table creation
+* dynamo_qc_check.sql: performed quality checks including row counts, column counts, count of nulls, min, max, and sum per column, special character check, etc.
+* Project Dynamo Quality Control Form.pdf: details the quality checks
